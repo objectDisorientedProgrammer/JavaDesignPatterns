@@ -3,6 +3,11 @@ package com.doug.statepattern;
 public class StateContext
 {
 	State state = null;
+	
+	/**
+	 * Default constructor initializes to Tier One.
+	 * @param s
+	 */
 	public StateContext(State s)
 	{
 		this.setState(new TierOne());
