@@ -6,11 +6,19 @@ public class StateContext
 	
 	/**
 	 * Default constructor initializes to Tier One.
-	 * @param s
+	 */
+	public StateContext()
+	{
+		this.setState(new TierOne());
+	}
+	
+	/**
+	 * Default constructor initializes to s.
+	 * @param s - state to start at
 	 */
 	public StateContext(State s)
 	{
-		this.setState(new TierOne());
+		this.setState(s);
 	}
 	
 	public void setState(State s)
